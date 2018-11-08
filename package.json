@@ -9,8 +9,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --open",
-    "prod": "serve -s dist"
+    "test": "webpack-dev-server --open",
+    "start": "serve -s dist"
   },
   "author": "",
   "license": "ISC",
