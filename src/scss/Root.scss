@@ -1,0 +1,19 @@
+@import 'compShared';
+
+.title{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: $titleHt;
+	font-size: 3em;
+	text-align: center;
+}
+
+.emptyBody{
+	position: absolute;
+	left: 5%;
+	top: $searchTop + $searchHt + 5%;
+	font-family: Helvetica;
+	font-size: 1.25em;
+}

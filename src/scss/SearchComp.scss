@@ -1,0 +1,18 @@
+@import 'compShared';
+
+.wrapper{
+	position: absolute;
+	right: 5%;
+	top: $searchTop;
+	height: $searchHt;	
+}
+
+.input{
+	display: inline-block;
+	width: 150px;
+}
+
+.searchBtn{
+	display: inline-block;
+	margin-left: 5px;
+}
