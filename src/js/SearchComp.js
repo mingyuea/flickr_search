@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { onSubmit } from '../actions/index.js';
+import { importData } from '../actions/index.js';
 import Style from '../scss/SearchComp.scss';
 import $ from 'jquery';
 
@@ -26,7 +26,6 @@ class SearchClass extends React.Component {
 		e.preventDefault();
 		let urlEndpoint = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
 		let searchTerm = this.state.inputVal;
-		//this.props.onSubmit(inputVal);
 
 		$.ajax({
 			url: urlEndpoint,
@@ -43,8 +42,6 @@ class SearchClass extends React.Component {
 				console.error('AJAX error:', status, err.toString())	
 			}.bind(this)
 		})
-
-		//this.props.onSearch();
 	}
 
 	handleChange(e){
